@@ -19,7 +19,7 @@ public class GreetingController {
 	}
 	
 	@GetMapping("/greetingMore")
-	public Greeting greetingMore(@RequestParam(value = "name", defaultValue = "World") String name) {
+	public Greeting greetingMore(@RequestParam(value = "name", defaultValue = "Who") String name) {
 		Calendar calendar = Calendar.getInstance();
 		int hour = calendar.get(Calendar.HOUR_OF_DAY);
 		String msg = "";
