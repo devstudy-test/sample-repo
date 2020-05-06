@@ -24,9 +24,9 @@ public class GreetingController {
 		int hour = calendar.get(Calendar.HOUR_OF_DAY);
 		String msg = "";
 		if(hour < 12) {
-			msg = "Good morning, %s!";
+			msg = "Good morning, %s";
 		} else {
-			msg = "Good afternoon, %s!";
+			msg = "Good afternoon, %s";
 		}
 		return new Greeting(counter.incrementAndGet(), String.format(msg, name));
 	}
